@@ -57,26 +57,10 @@
       {% endif %}
 
       {% for comment in comments %}
-        <div class="media mb-4">
-          <div class="media-body">
-            <h5 class="mt-0">
-              <a href="{% url 'posts:profile' comment.author.username %}">
-                {{ comment.author.username }}
-              </a>
-              <p>
-                Дата комментария: {{ comment.pub_date|date:"d E Y" }}
-              </p>
-            </h5>
-              <p>
-              {{ comment.text }}
-              </p>
-            </div>
-        </div>
+        {% include 'posts/includes/comment_list.html' %}
       {% endfor %}
-
       
     </article>
-  
   </div>
 
-{% endblock %} 
+{% endblock %}
