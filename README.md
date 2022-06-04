@@ -1,3 +1,21 @@
-# hw05_final
+# Социальная сеть YaTube с использованием фреймворка Django.
 
-[![CI](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml)
+Социальная сеть с возможностью создания, просмотра, редактирования и удаления записей, добавления изображений, а также реализован механизмом подписки на авторов. Проект покрыт тестами. Оформление выполнено на базе собственных шаблонов и подключен bootstrap.
+
+* Инструментарий:
+  * Django 2.2
+  * Python 3.7
+  * Django Unittest
+  * Django ORM
+
+* Как запустить проект:
+  * Клонировать репозиторий:
+    * `git clone https://github.com/MikhailPatrakov/hw05_final.git`
+  * Установить зависимости:
+    * `pip install -r requirements.txt`
+  * Примененить миграций:
+    * `python manage.py migrate`
+  * Создать администратора:
+    * `python manage.py createsuperuser`
+  * Запустить приложение:
+    * `python manage.py runserver`
